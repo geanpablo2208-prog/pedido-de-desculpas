@@ -1,0 +1,1909 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         🔴 ALTERE AQUI — TÍTULO DA ABA DO NAVEGADOR
+    ====================================================== -->
+
+    <title>Me Perdoa, Meu Amor ❤️</title>
+
+
+    <!-- =====================================================
+         🟢 NÃO PRECISA ALTERAR
+         FONTES
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           CONFIGURAÇÕES GERAIS
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #fff0f6,
+                #ffd6e7,
+                #ffc2dd,
+                #ffe8f1
+            );
+
+            color: #5c2341;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           CORAÇÕES FLUTUANTES
+        ===================================================== */
+
+        .coracoes {
+
+            position: fixed;
+
+            width: 100%;
+            height: 100%;
+
+            pointer-events: none;
+
+            z-index: 9999;
+
+            overflow: hidden;
+        }
+
+        .coracao {
+
+            position: absolute;
+
+            bottom: -50px;
+
+            font-size: 25px;
+
+            animation:
+                subir 8s linear infinite;
+
+            opacity: 0.8;
+        }
+
+
+        @keyframes subir {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            10% {
+
+                opacity: 0.8;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           TELA INICIAL
+        ===================================================== */
+
+        .inicio {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            background:
+
+                radial-gradient(
+                    circle at top,
+                    rgba(255,255,255,0.9),
+                    transparent 50%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #ffbad4,
+                    #ffdbe8,
+                    #fff2f7
+                );
+        }
+
+
+        .inicio h1 {
+
+            font-family:
+                'Great Vibes', cursive;
+
+            font-size:
+                clamp(60px, 10vw, 120px);
+
+            color: #d63384;
+
+            text-shadow:
+                0 3px 15px
+                rgba(214,51,132,0.2);
+
+            animation:
+                aparecer 2s ease;
+        }
+
+
+        .inicio h2 {
+
+            font-size:
+                clamp(22px, 4vw, 38px);
+
+            color: #a61e5c;
+
+            margin-top: -10px;
+
+            font-weight: 500;
+        }
+
+
+        .inicio p {
+
+            margin-top: 25px;
+
+            max-width: 750px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #71314f;
+        }
+
+
+        .botao {
+
+            margin-top: 35px;
+
+            display: inline-block;
+
+            border: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #d63384,
+                    #ff5ca8
+                );
+
+            color: white;
+
+            font-size: 17px;
+
+            padding: 16px 32px;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+
+            text-decoration: none;
+
+            box-shadow:
+                0 10px 30px
+                rgba(214,51,132,0.35);
+
+            transition: 0.3s;
+        }
+
+
+        .botao:hover {
+
+            transform:
+                translateY(-5px)
+                scale(1.05);
+
+            box-shadow:
+                0 15px 35px
+                rgba(214,51,132,0.45);
+        }
+
+
+        @keyframes aparecer {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(40px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           SEÇÕES
+        ===================================================== */
+
+        section {
+
+            padding:
+                90px 20px;
+        }
+
+
+        .container {
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .titulo {
+
+            font-family:
+                'Great Vibes', cursive;
+
+            text-align: center;
+
+            color: #d63384;
+
+            font-size: 65px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .subtitulo {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+
+            color: #8b4565;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           CARTA
+        ===================================================== */
+
+        .carta {
+
+            background:
+                rgba(255,255,255,0.78);
+
+            backdrop-filter:
+                blur(15px);
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 55px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 20px 60px
+                rgba(214,51,132,0.15);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.8);
+
+            line-height: 2;
+
+            font-size: 17px;
+        }
+
+
+        .carta strong {
+
+            color: #d63384;
+        }
+
+
+        .assinatura {
+
+            font-family:
+                'Great Vibes', cursive;
+
+            font-size: 45px;
+
+            color: #d63384;
+
+            margin-top: 30px;
+
+            text-align: right;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           GALERIA
+        ===================================================== */
+
+        .galeria {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(230px, 1fr)
+                );
+
+            gap: 25px;
+        }
+
+
+        .foto {
+
+            height: 340px;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffb4cf,
+                    #ffe0eb
+                );
+
+            box-shadow:
+                0 15px 40px
+                rgba(150,30,90,0.15);
+
+            position: relative;
+
+            transition: 0.4s;
+        }
+
+
+        .foto:hover {
+
+            transform:
+                translateY(-10px)
+                rotate(1deg);
+        }
+
+
+        .foto img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           CONTADOR
+        ===================================================== */
+
+        .contador {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            max-width: 800px;
+
+            margin: auto;
+
+            gap: 20px;
+        }
+
+
+        .tempo {
+
+            background:
+                rgba(255,255,255,0.75);
+
+            padding: 30px 15px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            box-shadow:
+                0 15px 40px
+                rgba(214,51,132,0.13);
+        }
+
+
+        .tempo h3 {
+
+            font-size: 42px;
+
+            color: #d63384;
+        }
+
+
+        .tempo p {
+
+            color: #89506b;
+
+            margin-top: 5px;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           MOTIVOS
+        ===================================================== */
+
+        .motivos {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(250px,1fr)
+                );
+
+            gap: 25px;
+        }
+
+
+        .motivo {
+
+            background:
+                rgba(255,255,255,0.75);
+
+            padding: 30px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 15px 35px
+                rgba(214,51,132,0.12);
+
+            transition: 0.3s;
+        }
+
+
+        .motivo:hover {
+
+            transform:
+                translateY(-8px);
+        }
+
+
+        .motivo span {
+
+            display: block;
+
+            font-size: 38px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .motivo h3 {
+
+            color: #d63384;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           SURPRESA
+        ===================================================== */
+
+        .surpresa {
+
+            text-align: center;
+
+            padding-bottom: 130px;
+        }
+
+
+        .mensagem-surpresa {
+
+            max-width: 700px;
+
+            margin: 35px auto 0;
+
+            background: white;
+
+            border-radius: 30px;
+
+            padding: 40px;
+
+            display: none;
+
+            box-shadow:
+                0 15px 50px
+                rgba(214,51,132,0.2);
+
+            animation:
+                aparecer 1s ease;
+        }
+
+
+        .mensagem-surpresa h3 {
+
+            font-family:
+                'Great Vibes', cursive;
+
+            font-size: 50px;
+
+            color: #d63384;
+        }
+
+
+        .mensagem-surpresa p {
+
+            line-height: 1.8;
+
+            margin-top: 15px;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           RODAPÉ
+        ===================================================== */
+
+        footer {
+
+            background:
+                #d63384;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px;
+        }
+
+
+        footer h2 {
+
+            font-family:
+                'Great Vibes', cursive;
+
+            font-size: 40px;
+
+            font-weight: normal;
+        }
+
+
+        /* =====================================================
+           🟢 NÃO ALTERAR
+           RESPONSIVIDADE
+        ===================================================== */
+
+        @media(max-width:700px) {
+
+            .contador {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+
+            .carta {
+
+                padding:
+                    30px 25px;
+            }
+
+
+            .titulo {
+
+                font-size: 50px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     🟢 NÃO ALTERAR
+     CORAÇÕES
+========================================================= -->
+
+<div
+    class="coracoes"
+    id="coracoes">
+</div>
+
+
+
+<!-- =========================================================
+     ❤️ TELA INICIAL
+========================================================= -->
+
+<section class="inicio">
+
+    <div>
+
+        <div style="font-size:60px;">
+
+            💗
+
+        </div>
+
+
+        <!-- =================================================
+             🔴 ALTERE AQUI SE QUISER
+             NOME / APELIDO DELA
+        ================================================== -->
+
+        <h1>
+
+            Me Perdoa...
+
+        </h1>
+
+
+        <h2>
+
+            ❤️ Minha Gostosaaaa!!! ❤️
+
+        </h2>
+
+
+        <!-- =================================================
+             🔴 ALTERE AQUI
+             MENSAGEM PRINCIPAL
+        ================================================== -->
+
+        <p>
+
+            Eu sei que errei.
+
+            Esquecer a data que você queria que
+            considerássemos foi uma falta de atenção
+            que eu não deveria ter cometido.
+
+            E antes de qualquer explicação,
+            eu quero simplesmente te pedir desculpas.
+
+        </p>
+
+
+        <!-- 🟢 NÃO ALTERAR -->
+
+        <a
+            href="#carta"
+            class="botao">
+
+            Quero te explicar uma coisa 💌
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     💌 CARTA / PEDIDO DE DESCULPAS
+========================================================= -->
+
+<section id="carta">
+
+    <div class="container">
+
+
+        <!-- 🔴 ALTERE AQUI SE QUISER -->
+
+        <h2 class="titulo">
+
+            Eu preciso te pedir desculpas
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            Não quero justificar meu erro.
+            Quero que você entenda o que essa data significa para mim.
+
+        </p>
+
+
+        <div class="carta">
+
+
+            <!-- =================================================
+                 🔴🔴🔴 TEXTO PRINCIPAL
+                 
+                 AQUI ESTÁ O PEDIDO DE DESCULPAS
+            ================================================== -->
+
+            <p>
+
+                Meu amor,
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Antes de qualquer coisa,
+                <strong>
+                    me desculpa.
+                </strong>
+
+                Eu sei que errei quando esqueci a data
+                que você queria que nós considerássemos
+                como a nossa nova data de namoro.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Eu sei que para você essa data tem importância.
+
+                E eu deveria ter lembrado.
+
+                Não quero diminuir o que você sentiu,
+                muito menos usar uma explicação como desculpa
+                para o meu erro.
+
+                <strong>
+                    Eu simplesmente deveria ter lembrado.
+                </strong>
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Mas existe uma coisa que eu quero que você
+                entenda sobre o motivo de eu continuar
+                pensando na nossa antiga data.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Na minha cabeça,
+                <strong>
+                    nós nunca terminamos de verdade.
+                </strong>
+
+                Eu nunca senti que nossa história acabou.
+
+                Nunca senti que deixei de ser seu namorado
+                ou que deixei de amar você.
+
+                Por isso, dentro de mim,
+                a nossa antiga data continuou tendo um significado
+                muito forte.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Para mim, aquela data representa
+                o começo da nossa história,
+                tudo aquilo que vivemos,
+                tudo que construímos
+                e todos os momentos que fizeram
+                eu me apaixonar ainda mais por você.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Mas eu também entendo que você pediu
+                para considerarmos uma nova data.
+
+                E mesmo que eu tenha uma visão diferente
+                sobre a nossa história,
+                <strong>
+                    eu respeito o significado que essa nova data
+                    tem para você.
+                </strong>
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                O meu erro não foi pensar na nossa história
+                de uma maneira diferente.
+
+                O meu erro foi
+                <strong>
+                    esquecer algo que era importante para você.
+                </strong>
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                E por isso eu estou aqui,
+                não para tentar ganhar uma discussão
+                sobre qual data está certa.
+
+                Estou aqui porque
+                <strong>
+                    você é mais importante para mim
+                </strong>
+                do que qualquer data.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Eu não quero que você pense que esqueci
+                a nossa história.
+
+                Eu não esqueci.
+
+                Talvez eu tenha esquecido um dia específico,
+                mas não esqueci de nós.
+
+                Não esqueci de tudo que vivemos,
+                de tudo que sentimos
+                e de tudo que ainda quero viver ao seu lado.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Eu sei que um pedido de desculpas
+                não apaga o momento em que você ficou magoada.
+
+                Mas espero que você consiga perceber
+                que estou sendo sincero.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                <strong>
+                    Me perdoa por ter esquecido.
+                </strong>
+
+                Me perdoa por não ter dado àquela data
+                a atenção que ela merecia.
+
+                E me perdoa principalmente
+                se fiz você sentir que a nossa história
+                não é importante para mim.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Porque é.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                <strong>
+                    Você é importante para mim.
+                </strong>
+
+                Muito mais do que qualquer data,
+                qualquer calendário
+                ou qualquer número poderia representar.
+
+            </p>
+
+            <br>
+
+
+            <p>
+
+                Eu amo você.
+
+                E espero que possamos continuar escrevendo
+                a nossa história juntos,
+                com mais atenção,
+                mais carinho,
+                mais compreensão
+                e muitos momentos que ainda estão por vir.
+
+            </p>
+
+
+            <!-- =================================================
+                 🔴 ALTERE AQUI — SEU NOME
+            ================================================== -->
+
+            <div class="assinatura">
+
+                Com amor,
+
+                <br>
+
+                Gean 💗
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     📸 NOSSAS MEMÓRIAS
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="titulo">
+
+            Porque nossa história continua
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            Algumas lembranças de tudo aquilo que
+            nunca deixou de existir entre nós.
+
+        </p>
+
+
+        <div class="galeria">
+
+
+            <!-- =================================================
+                 🔴 FOTO 1
+                 
+                 Coloque "foto1.jpeg" na mesma pasta do HTML
+            ================================================== -->
+
+            <div class="foto">
+
+                <img
+                    src="foto1.jpeg"
+                    alt="Nossa memória">
+
+            </div>
+
+
+
+            <!-- =================================================
+                 🔴 FOTO 2
+            ================================================== -->
+
+            <div class="foto">
+
+                <img
+                    src="foto2.jpeg"
+                    alt="Nossa memória">
+
+            </div>
+
+
+
+            <!-- =================================================
+                 🔴 FOTO 3
+            ================================================== -->
+
+            <div class="foto">
+
+                <img
+                    src="foto3.jpeg"
+                    alt="Nossa memória">
+
+            </div>
+
+
+
+            <!-- =================================================
+                 🔴 FOTO 4
+            ================================================== -->
+
+            <div class="foto">
+
+                <img
+                    src="foto4.jpeg"
+                    alt="Nossa memória">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     📅 AS DUAS DATAS
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="titulo">
+
+            Duas datas, uma história
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            Talvez o calendário veja duas datas.
+            Meu coração vê uma história que nunca acabou.
+
+        </p>
+
+
+        <div class="motivos">
+
+
+            <!-- =================================================
+                 🔴 ALTERE AQUI — DATA ANTIGA
+            ================================================== -->
+
+            <div class="motivo">
+
+                <span>❤️</span>
+
+                <h3>
+
+                    A nossa antiga data
+
+                </h3>
+
+                <p>
+
+                    A data que, para mim,
+                    representa o começo da nossa história.
+
+                    É a data que eu nunca deixei de guardar
+                    porque nunca senti que nós realmente
+                    deixamos de existir como casal.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 🔴 ALTERE AQUI — NOVA DATA
+            ================================================== -->
+
+            <div class="motivo">
+
+                <span>🌹</span>
+
+                <h3>
+
+                    A nova data
+
+                </h3>
+
+                <p>
+
+                    A data que você pediu para nós considerarmos.
+
+                    Eu reconheço que ela é importante para você
+                    e quero respeitar o significado que ela possui
+                    para a nossa história.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 🔴 ALTERE AQUI — CONCLUSÃO
+            ================================================== -->
+
+            <div class="motivo">
+
+                <span>♾️</span>
+
+                <h3>
+
+                    O que realmente importa
+
+                </h3>
+
+                <p>
+
+                    Independentemente da data que esteja
+                    no calendário,
+
+                    <strong>
+                        o que importa para mim é que somos nós.
+                    </strong>
+
+                    E eu quero continuar escrevendo
+                    essa história com você.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ⏳ TEMPO DA NOSSA HISTÓRIA
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="titulo">
+
+            O tempo passa...
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            ...mas algumas histórias continuam sendo importantes.
+
+        </p>
+
+
+        <div class="contador">
+
+
+            <div class="tempo">
+
+                <h3 id="dias">
+                    0
+                </h3>
+
+                <p>
+                    Dias
+                </p>
+
+            </div>
+
+
+            <div class="tempo">
+
+                <h3 id="horas">
+                    0
+                </h3>
+
+                <p>
+                    Horas
+                </p>
+
+            </div>
+
+
+            <div class="tempo">
+
+                <h3 id="minutos">
+                    0
+                </h3>
+
+                <p>
+                    Minutos
+                </p>
+
+            </div>
+
+
+            <div class="tempo">
+
+                <h3 id="segundos">
+                    0
+                </h3>
+
+                <p>
+                    Segundos
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     💗 POR QUE EU NÃO ESQUEÇO DE NÓS
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="titulo">
+
+            O que eu nunca esqueci
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            Porque esquecer uma data não significa esquecer uma história.
+
+        </p>
+
+
+        <div class="motivos">
+
+
+            <div class="motivo">
+
+                <span>❤️</span>
+
+                <h3>
+                    O que sinto por você
+                </h3>
+
+                <p>
+
+                    Isso nunca dependeu de uma data.
+
+                    Meu sentimento por você
+                    continua sendo real.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="motivo">
+
+                <span>🥰</span>
+
+                <h3>
+                    Seu jeito
+                </h3>
+
+                <p>
+
+                    Eu continuo amando seu jeito,
+                    suas manias,
+                    suas brincadeiras
+                    e até as coisas que você faz
+                    que me deixam maluco.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="motivo">
+
+                <span>😂</span>
+
+                <h3>
+                    Nossas risadas
+                </h3>
+
+                <p>
+
+                    Eu não esqueci das nossas conversas,
+                    das nossas brincadeiras
+                    e das vezes que rimos
+                    por absolutamente nada.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="motivo">
+
+                <span>💗</span>
+
+                <h3>
+                    Nossas lembranças
+                </h3>
+
+                <p>
+
+                    São tantas que seria impossível
+                    colocar todas aqui.
+
+                    E ainda quero criar muitas outras.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="motivo">
+
+                <span>🤍</span>
+
+                <h3>
+                    Você
+                </h3>
+
+                <p>
+
+                    Acima de qualquer data,
+                    existe você.
+
+                    E é você quem importa.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="motivo">
+
+                <span>♾️</span>
+
+                <h3>
+                    Nós
+                </h3>
+
+                <p>
+
+                    Nossa história não cabe
+                    em uma data do calendário.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     🎁 SURPRESA FINAL
+========================================================= -->
+
+<section class="surpresa">
+
+    <div class="container">
+
+
+        <h2 class="titulo">
+
+            Antes de terminar...
+
+        </h2>
+
+
+        <p class="subtitulo">
+
+            Eu ainda tenho uma última coisa para te dizer.
+
+        </p>
+
+
+        <!-- 🟢 NÃO ALTERAR -->
+
+        <button
+            class="botao"
+            onclick="mostrarSurpresa()">
+
+            Clique aqui, meu amor ❤️
+
+        </button>
+
+
+        <div
+            class="mensagem-surpresa"
+            id="mensagemSurpresa">
+
+
+            <!-- =================================================
+                 🔴 ALTERE AQUI SE QUISER
+            ================================================== -->
+
+            <h3>
+
+                Eu não quero perder você.
+
+            </h3>
+
+
+            <p>
+
+                Talvez eu tenha errado.
+
+                Talvez eu tenha esquecido uma data
+                que para você era importante.
+
+            </p>
+
+
+            <p>
+
+                Mas eu não quero que um erro meu
+                faça você duvidar do quanto
+                nossa história significa para mim.
+
+            </p>
+
+
+            <p>
+
+                Se existe uma coisa que eu quero lembrar
+                todos os dias,
+
+                <strong>
+                    é de cuidar de você.
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                Quero prestar mais atenção,
+                ouvir mais,
+                compreender mais
+                e demonstrar mais.
+
+            </p>
+
+
+            <p>
+
+                Porque amar também é reconhecer
+                quando erramos e tentar fazer melhor.
+
+            </p>
+
+
+            <br>
+
+
+            <strong
+                style="
+                    color:#d63384;
+                    font-size:20px;
+                ">
+
+                Me perdoa, minha gostosa. ❤️
+
+                <br><br>
+
+                Eu amo você.
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ❤️ RODAPÉ
+========================================================= -->
+
+<footer>
+
+    <h2>
+
+        Nossa história continua ❤️
+
+    </h2>
+
+
+    <!-- 🔴 ALTERE AQUI SE QUISER -->
+
+    <p>
+
+        Feito por alguém que errou,
+        mas que ama muito você.
+
+    </p>
+
+</footer>
+
+
+
+<script>
+
+
+/* ============================================================
+   🟢 NÃO ALTERAR
+   CORAÇÕES FLUTUANTES
+============================================================ */
+
+function criarCoracao() {
+
+    const coracao =
+        document.createElement("div");
+
+
+    coracao.classList.add(
+        "coracao"
+    );
+
+
+    const tipos = [
+
+        "💗",
+        "💕",
+        "💖",
+        "💓",
+        "❤️",
+        "🌸"
+
+    ];
+
+
+    coracao.innerHTML =
+        tipos[
+            Math.floor(
+                Math.random() *
+                tipos.length
+            )
+        ];
+
+
+    coracao.style.left =
+        Math.random() *
+        100 +
+        "vw";
+
+
+    coracao.style.animationDuration =
+        (
+            Math.random() *
+            5 +
+            5
+        ) +
+        "s";
+
+
+    coracao.style.fontSize =
+        (
+            Math.random() *
+            20 +
+            15
+        ) +
+        "px";
+
+
+    document
+        .getElementById("coracoes")
+        .appendChild(coracao);
+
+
+    setTimeout(
+
+        () => coracao.remove(),
+
+        10000
+
+    );
+
+}
+
+
+setInterval(
+
+    criarCoracao,
+
+    500
+
+);
+
+
+
+/* ============================================================
+   ⏳ CONTADOR
+
+   🔴🔴🔴 ALTERE SOMENTE A DATA ABAIXO 🔴🔴🔴
+
+   COLOQUE A DATA QUE VOCÊ CONSIDERA
+   COMO O INÍCIO DA HISTÓRIA.
+
+   FORMATO:
+
+   ANO-MÊS-DIA
+
+   Exemplo:
+
+   2023-01-23
+============================================================ */
+
+
+const inicioNamoro =
+    new Date(
+        "2023-01-23T00:00:00"
+    );
+
+
+
+/* ============================================================
+   🟢 NÃO ALTERAR
+   FUNCIONAMENTO DO CONTADOR
+============================================================ */
+
+function atualizarContador() {
+
+    const agora =
+        new Date();
+
+
+    const diferenca =
+        agora -
+        inicioNamoro;
+
+
+    const dias =
+        Math.floor(
+            diferenca /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const horas =
+        Math.floor(
+            (
+                diferenca /
+                (1000 * 60 * 60)
+            ) % 24
+        );
+
+
+    const minutos =
+        Math.floor(
+            (
+                diferenca /
+                (1000 * 60)
+            ) % 60
+        );
+
+
+    const segundos =
+        Math.floor(
+            (
+                diferenca /
+                1000
+            ) % 60
+        );
+
+
+    document
+        .getElementById("dias")
+        .innerText =
+        dias;
+
+
+    document
+        .getElementById("horas")
+        .innerText =
+        horas;
+
+
+    document
+        .getElementById("minutos")
+        .innerText =
+        minutos;
+
+
+    document
+        .getElementById("segundos")
+        .innerText =
+        segundos;
+
+}
+
+
+setInterval(
+
+    atualizarContador,
+
+    1000
+
+);
+
+
+atualizarContador();
+
+
+
+/* ============================================================
+   🎁 SURPRESA FINAL
+
+   🟢 NÃO ALTERAR
+============================================================ */
+
+function mostrarSurpresa() {
+
+    const mensagem =
+        document.getElementById(
+            "mensagemSurpresa"
+        );
+
+
+    mensagem.style.display =
+        "block";
+
+
+    mensagem.scrollIntoView({
+
+        behavior:
+            "smooth",
+
+        block:
+            "center"
+
+    });
+
+
+    /* CHUVA DE CORAÇÕES */
+
+    for (
+        let i = 0;
+        i < 25;
+        i++
+    ) {
+
+        setTimeout(
+
+            criarCoracao,
+
+            i * 80
+
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
